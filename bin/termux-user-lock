@@ -7,7 +7,7 @@ file="$HOME/.termux/user-lock"
 text="### This is an empty file, What does that mean?\n## It means that it is responsible for displaying the user login page, In this case.\n## you can delete it only in emergency cases when you cannot access Termux directly without any problems."
 
 # الكلمات المطلوبة للتحقق
-keywords=("start-login")
+keywords=("start-login" "start-exit")
 
 # التحقق مما إذا كان الملف موجودًا
 if [ ! -f "$file" ]; then
