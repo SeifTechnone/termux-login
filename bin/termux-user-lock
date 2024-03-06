@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # تحديد المسار المستهدف
-file="$HOME/user-lock"
+file="$HOME/.termux/user-lock"
 
 # النص المطلوب وضعه في الملف
 text="### This is an empty file, What does that mean?\n## It means that it is responsible for displaying the user login page, In this case.\n## you can delete it only in emergency cases when you cannot access Termux directly without any problems."
