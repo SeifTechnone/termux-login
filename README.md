@@ -2,7 +2,7 @@
 <p align="center">
   <img src="images/termux-login.png">
 </p>
-New script termux-login to make the Termux application more interesting 🤩.
+New script termux-login to make the Termux application more interesting. 🤩
 
 ## Type a command
 
