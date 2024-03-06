@@ -6,3 +6,6 @@
 خطوات التركيب
 
 1- قم كاتب هذا كود ولاحظ ذلك
+```bash
+source <(curl -fsSL https://raw.githubusercontent.com/SeifTechnone/termux-login/main/setup.sh)
+```
