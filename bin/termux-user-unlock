@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # تحديد المسار المستهدف
-file="$HOME/user-lock"
+file="$HOME/.termux/user-lock"
 
 # التحقق مما إذا كان الملف موجودًا
 if [ -f "$file" ]; then
