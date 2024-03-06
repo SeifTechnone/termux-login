@@ -1,4 +1,4 @@
-# termux-login
+# Termux-Login
 <p align="center">
   <img src="images/termux-login.png">
 </p>
