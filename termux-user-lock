@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# تحديد المسار المستهدف
+file="$HOME/user-lock"
+
+# النص المطلوب وضعه في الملف
+text="### This is an empty file, What does that mean?\n## It means that it is responsible for displaying the user login page, In this case.\n## you can delete it only in emergency cases when you cannot access Termux directly without any problems."
+
+# الكلمات المطلوبة للتحقق
+keywords=("start-login" "start-exit")
+
+# التحقق مما إذا كان الملف موجودًا
+if [ ! -f "$file" ]; then
+    # إذا لم يكن الملف موجودًا، قم بإنشاء الملف ووضع النص فيه
+    echo -e "$text" > "$file"
+fi
+
+# التحقق وإضافة الكلمات إلى الملف
+for keyword in "${keywords[@]}"; do
+    # التحقق مما إذا كانت الكلمة موجودة بالفعل في الملف
+    if ! grep -q "$keyword" "$file"; then
+        # إذا لم تكن الكلمة موجودة، قم بإضافتها إلى الملف
+        echo "$keyword" >> "$file"
+    fi
+done
