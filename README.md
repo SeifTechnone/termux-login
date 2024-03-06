@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="images/termux-login.png">
+</p>
 # termux-login
 اسكريبت جديد termux-login لجعل تطبيق Termux اكثر تشويقاً له
 خطوات التركيب
