@@ -1,8 +1,8 @@
 curl -o $HOME/.termux/termux-login.py https://raw.githubusercontent.com/SeifTechnone/termux-login/main/termux-login.py
 
-curl -o $PREFIX/bin/termux-user-lock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/termux-user-lock
+curl -o $PREFIX/bin/termux-user-lock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-lock
 
-curl -o $PREFIX/bin/termux-user-unlock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/termux-user-unlock
+curl -o $PREFIX/bin/termux-user-unlock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-unlock
 
 
 chmod +x $HOME/.termux/termux-login.py
