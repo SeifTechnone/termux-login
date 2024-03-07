@@ -32,7 +32,7 @@ def animate_login_screen(stdscr):
     correct_password = "1234"
     attempts = 3
 
-    password = ""  # تعريف المتغير password هنا
+    password = ""  # Define the variable password here
 
     # Calculate the positions of text elements
     login_x = width // 2 - len(login_text) // 2
