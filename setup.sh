@@ -1,5 +1,13 @@
+#!/bin/bash
 
-# تعليقات تحديد البداية والنهاية للنص المراد حذفه
+# delete the unnecessary motd files
+motd_file="/data/data/com.termux/files/usr/etc/*motd*"
+
+if [ -e "$motd_file" ]; then
+    rm -rf "$motd_file"
+fi
+
+# Comments indicating the start and end of the text to be deleted
 start_comment="# start of text to remove"
 end_comment="# end of text to remove"
 
@@ -17,20 +25,20 @@ if [ -f "$file" ] && [ -r "$file" ]; then
     done
 fi'
 
-# حذف النص الموجود بين التعليقات
+# Delete the text located between the comments
 sed -i "/$start_comment/,/$end_comment/d" "$PREFIX/etc/bash.bashrc"
 
-# إضافة التعليقات والنص إلى ملف bash.bashrc
+# Add the comments and text to the bash.bashrc file
 {
 echo "$start_comment"
 echo "$text_to_remove"
 echo "$end_comment"
 } >> "$PREFIX/etc/bash.bashrc"
 
-# حذف النص الموجود بين التعليقات
+# Delete the text located between the comments
 sed -i "/$start_comment/,/$end_comment/d" "$PREFIX/etc/bash.bashrc"
 
-# إضافة التعليقات والنص إلى ملف bash.bashrc
+# Add the comments and text to the bash.bashrc file
 {
 echo "$start_comment"
 echo "$text_to_remove"
