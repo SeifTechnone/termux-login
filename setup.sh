@@ -2,7 +2,6 @@
 
 # delete the unnecessary motd files
 motd_file="$PREFIX/etc/*motd*"
-
 if [ -e "$motd_file" ]; then
     rm -rf "$motd_file"
 fi
@@ -47,9 +46,7 @@ echo "$end_comment"
 
 # Downloading scripts to designated locations
 curl -o $HOME/.termux/termux-login.py https://raw.githubusercontent.com/SeifTechnone/termux-login/main/termux-login.py
-
 curl -o $PREFIX/bin/termux-user-lock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-lock
-
 curl -o $PREFIX/bin/termux-user-unlock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-unlock
 
 # Granting specific permissions to it
