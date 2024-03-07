@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # delete the unnecessary motd files
-motd_file="/data/data/com.termux/files/usr/etc/*motd*"
+motd_file="$PREFIX/etc/*motd*"
 
 if [ -e "$motd_file" ]; then
     rm -rf "$motd_file"
@@ -45,13 +45,14 @@ echo "$text_to_remove"
 echo "$end_comment"
 } >> "$PREFIX/etc/bash.bashrc"
 
+# Downloading scripts to designated locations
 curl -o $HOME/.termux/termux-login.py https://raw.githubusercontent.com/SeifTechnone/termux-login/main/termux-login.py
 
 curl -o $PREFIX/bin/termux-user-lock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-lock
 
 curl -o $PREFIX/bin/termux-user-unlock https://raw.githubusercontent.com/SeifTechnone/termux-login/main/bin/termux-user-unlock
 
-
+# Granting specific permissions to it
 chmod +x $HOME/.termux/termux-login.py
 chmod +x $PREFIX/bin/termux-user-lock
 chmod +x $PREFIX/bin/termux-user-unlock
