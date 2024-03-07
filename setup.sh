@@ -10,7 +10,7 @@ fi
 start_comment="# start of text to remove"
 end_comment="# end of text to remove"
 
-# النص المراد بحثه وحذفه بين التعليقين
+# The text to be searched for and deleted between the comments
 text_to_remove='file="$HOME/.termux/user-lock"
 keywords=("start-login" "start-exit")
 commands=("python $HOME/.termux/termux-login.py 2>/dev/null" "exit 0")
