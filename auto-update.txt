@@ -1,2 +1,2 @@
-# This is a simple text file for a connected script program with the check-update.sh script to fetch script updates automatically when it starts downloading.
+# This is a simple text file for a connected script program with the "setup.sh" script to fetch script updates automatically when it starts downloading.
 info-update="v1.5.0"
