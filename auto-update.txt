@@ -1,1 +1,1 @@
-Auto-Update-Script-Termux-Login="V1.5.0"
+Auto-Update-Script-Termux-Login="v1.5.0"
