@@ -11,15 +11,15 @@ keywords=("start-login" "start-exit")
 
 # Verify if the file exists
 if [ ! -f "$file" ]; then
-    # إذا لم يكن الملف موجودًا، قم بإنشاء الملف ووضع النص فيه
+    # If the file doesn't exist, create the file and place the text in it
     echo -e "$text" > "$file"
 fi
 
 # Verify and add the words to the file
 for keyword in "${keywords[@]}"; do
-    # التحقق مما إذا كانت الكلمة موجودة بالفعل في الملف
+    # Verify if the word already exists in the file
     if ! grep -q "$keyword" "$file"; then
-        # إذا لم تكن الكلمة موجودة، قم بإضافتها إلى الملف
+        # If the word doesn't exist, add it to the file
         echo "$keyword" >> "$file"
     fi
 done
