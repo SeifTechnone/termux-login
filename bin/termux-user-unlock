@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# تحديد المسار المستهدف
+# Specify the target path
 file="$HOME/.termux/user-lock"
 
-# التحقق مما إذا كان الملف موجودًا
+# Verify if the file exists
 if [ -f "$file" ]; then
-    # في حالة وجود الملف، قم بحذفه
+    # If the file exists, delete it
     rm "$file"
 fi
